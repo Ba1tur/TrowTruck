@@ -77,6 +77,12 @@
   justify-content: space-around;
 }
 
+@media screen and (max-height: 700px) {
+  .first__icons {
+    bottom: 10% !important;
+
+  }
+}
 @media (max-width: 900px) {
   .first {
     background: url("../../public/first.png") center/cover no-repeat;
@@ -121,5 +127,12 @@
 @media (max-width: 400px) {
   .first__title {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 370px) {
+  
+  .first__icons {
+    right: 0px !important;
   }
 }
