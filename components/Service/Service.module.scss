@@ -36,15 +36,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     div{
       border-radius: 50%;
       overflow: hidden;
       width: 80px;
       height: 80px;
-
+      margin-bottom: 15px;
       img{
         width: 100%;
+        object-fit: cover;
       }
     }
 

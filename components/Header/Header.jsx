@@ -9,9 +9,9 @@ import {
     DrawerOverlay,
     useDisclosure
 } from "@chakra-ui/react";
-import {useRef} from "react";
-import {RxHamburgerMenu} from "react-icons/rx";
-import {motion} from "framer-motion";
+import { useRef } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 const leftAnimation = {
     hidden: {
@@ -21,7 +21,7 @@ const leftAnimation = {
     visible: custom => ({
         scale: 1.0,
         opacity: 1,
-        transition: {duration: 0.2, delay: custom * 0.2}
+        transition: { duration: 0.2, delay: custom * 0.2 }
     })
 }
 
@@ -32,21 +32,21 @@ const Header = () => {
 
     return (
         <motion.nav className={n.nav}
-                    initial="hidden"
-                    whileInView="visible"
+            initial="hidden"
+            whileInView="visible"
         >
             <div className="container">
                 <motion.div
                     variants={leftAnimation}
                     className={n.nav__content}>
                     <div className={n.nav__left}>
-                        <img src="/tuck.png" alt=""/>
+                        <img src="/tuck.png" alt="" />
                     </div>
 
                     <motion.div className={n.nav__drawer}
-                                variants={leftAnimation}>
+                        variants={leftAnimation}>
                         <button className={n.nav__drawer_btn} ref={btnRef} onClick={onOpen}>
-                            <RxHamburgerMenu size={25}/>
+                            <RxHamburgerMenu size={25} />
                         </button>
                         <Drawer
                             isOpen={isOpen}
@@ -77,30 +77,33 @@ const Header = () => {
 
                     <div
                         className={n.nav__right}>
-                       <motion.p
-                           custom={1}
-                           variants={leftAnimation}
-                           className={n.nav__right_link}>
-                           услуги
-                       </motion.p>
+                        <motion.a
+                            href='#services'
+                            custom={1}
+                            variants={leftAnimation}
+                            className={n.nav__right_link}>
+                            услуги
+                        </motion.a>
 
-                        <motion.p
+                        <motion.a
+                            href='#about'
                             custom={2}
                             variants={leftAnimation}
                             className={n.nav__right_link}>
                             О компании
-                        </motion.p>
+                        </motion.a>
 
-                        <motion.p
+                        <motion.a
+                            href="tel:+996 706 725 212 "
                             custom={3}
                             variants={leftAnimation}
                             className={n.nav__right_link}>
                             Позвонить
-                        </motion.p>
+                        </motion.a>
                     </div>
                 </motion.div>
-            </div>
-        </motion.nav>
+            </div >
+        </motion.nav >
     );
 };
 

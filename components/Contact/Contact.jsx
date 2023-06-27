@@ -21,6 +21,7 @@ const topAnimation = {
 const Contact = () => {
     return (
         <motion.section
+            id='contact'
             initial="hidden"
             whileInView="visible"
             className={c.contact}>
