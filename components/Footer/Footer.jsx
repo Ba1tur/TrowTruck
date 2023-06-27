@@ -31,7 +31,7 @@ const Footer = () => {
                         variants={leftAnimation}
                         className={f.footer__box}>
                         <span className={f.footer__box_link}>
-                            123456, Бишкек, Невский пр-кт 127
+                           Ибраимова 115/1 , Бизнес центр Асыл-Таш
                         </span>
                     </motion.div>
 

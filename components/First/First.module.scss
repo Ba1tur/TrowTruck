@@ -1,6 +1,9 @@
 .first{
   background: url("../../public/first.png")center/cover no-repeat;
-  padding: 160px 0 230px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: -2;
 
