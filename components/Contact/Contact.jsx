@@ -1,117 +1,100 @@
-import c from './Contact.module.scss'
+import c from "./Contact.module.scss";
 import Title from "@/components/Title/Title";
-import InputMask from 'react-input-mask';
-import {motion} from "framer-motion";
-
+import InputMask from "react-input-mask";
+import { motion } from "framer-motion";
 
 const topAnimation = {
     hidden: {
         y: -100,
-        opacity: 0
+        opacity: 0,
     },
-    visible: custom => ({
+    visible: (custom) => ({
         y: 0,
         opacity: 1,
-        transition: {duration: 0.3, delay: custom * 0.2}
-    })
-}
-
-
+        transition: { duration: 0.3, delay: custom * 0.2 },
+    }),
+};
 
 const Contact = () => {
     return (
         <motion.section
-            id='contact'
             initial="hidden"
             whileInView="visible"
             className={c.contact}>
 
             <div className="container">
-                <Title text="Связаться с нами"/>
+                <Title text="Связаться с нами" />
 
                 <div className={c.contact__content}>
-
-                    <ul
-                        className={c.contact__left}>
-                        <motion.li
-                        custom={1}
-                        variants={topAnimation}
-                        >
-                            <span className={c.contact__left_name}>
-                                Телефон:
-                            </span>
+                    <ul className={c.contact__left}>
+                        <motion.li custom={1} variants={topAnimation}>
+                            <span className={c.contact__left_name}>Телефон:</span>
 
                             <span className={c.contact__left_desc}>
-                                +996709445545 <br/>
-                                +996509445545 <br/>
-                                +996550445545 <br/>
-                                +996707445545 <br/>
+                                +996(706)72-52-12
+                                <br />
+                                +996(706)72-52-12
+                                <br />
+                                +996(706)72-52-12
+                                <br />
+                                +996(706)72-52-12
+                                <br />
                             </span>
                         </motion.li>
 
-                        <motion.li
-                        custom={2}
-                        variants={topAnimation}
-                        >
-                            <span className={c.contact__left_name}>
-                                Адресс:
-                            </span>
+                        <motion.li custom={2} variants={topAnimation}>
+                            <span className={c.contact__left_name}>Адресс:</span>
 
                             <span className={c.contact__left_desc}>
                                 123456, Бишкек, Невский
                             </span>
                         </motion.li>
 
-                        <motion.li
-                        custom={3}
-                        variants={topAnimation}
-                        >
-                            <span className={c.contact__left_name}>
-                                Инстаграмм:
-                            </span>
+                        <motion.li custom={3} variants={topAnimation}>
+                            <span className={c.contact__left_name}>Инстаграмм:</span>
 
-                            <span className={c.contact__left_desc}>
-                                EVACUATOR_INSTA
-                            </span>
+                            <span className={c.contact__left_desc}>kg.evakuator</span>
                         </motion.li>
 
-                        <motion.li
-                        custom={4}
-                        variants={topAnimation}
-                        >
-                            <span className={c.contact__left_name}>
-                                ТЕЛЕГРАММ:
-                            </span>
+                        <motion.li custom={4} variants={topAnimation}>
+                            <span className={c.contact__left_name}>ТЕЛЕГРАММ:</span>
 
-                            <span className={c.contact__left_desc}>
-                                Evacuator_tg
-                            </span>
+                            <span className={c.contact__left_desc}>kg.evakuator</span>
                         </motion.li>
                     </ul>
 
                     <motion.form className={c.contact__right}>
-
                         <motion.input
                             custom={1}
                             variants={topAnimation}
-                            placeholder="Name" type="text"/>
+                            placeholder="Name"
+                            type="text"
+                        />
 
-                        <motion.div style={{width: "100%"}}
-                             custom={2}
-                             variants={topAnimation}>
+                        <motion.div
+                            style={{ width: "100%" }}
+                            custom={2}
+                            variants={topAnimation}
+                        >
                             <InputMask
-                                style={{width: "100%"}}
-                                mask={`+\\9\\96(999)99-99-99`} type='tel' className="form__box-field"  placeholder="Phone number"/>
-
+                                style={{ width: "100%" }}
+                                mask={`+\\9\\96(999)99-99-99`}
+                                type="tel"
+                                className="form__box-field"
+                                placeholder="Phone number"
+                            />
                         </motion.div>
 
                         <motion.textarea
                             custom={3}
                             variants={topAnimation}
-                            placeholder="Message"/>
+                            placeholder="Message"
+                        />
 
                         <div className={c.contact__right_box}>
-                            <button type="submit" className={c.contact__right_btn}>отправить</button>
+                            <button type="submit" className={c.contact__right_btn}>
+                                отправить
+                            </button>
                         </div>
                     </motion.form>
                 </div>

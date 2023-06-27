@@ -72,11 +72,7 @@ export default function Home() {
                 </a>
 
                 <a href="tel:+996 706 725 212">
-                    <FiPhoneCall size={30}/>
-                </a>
-
-                <a href="https://www.instagram.com/kg.evakuator/?hl=bg">
-                    <AiOutlineInstagram size={30}/>
+                    <FiPhoneCall size={40}/>
                 </a>
             </div>
             <First/>
