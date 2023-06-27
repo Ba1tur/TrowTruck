@@ -1,22 +1,22 @@
-.contact{
-  padding: 80px 0 30px;
+.contact {
+  padding: 80px 0 200px;
 
-  &__content{
+  &__content {
     display: flex;
     column-gap: 50px;
     margin-top: 80px;
   }
 
-  &__left{
+  &__left {
     padding-top: 20px;
     width: calc(50% - 25px);
     position: relative;
 
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       width: 90px;
       height: 6px;
-      background: #C8A35F;
+      background: #c8a35f;
       position: absolute;
       left: 0;
       top: 0;
@@ -25,82 +25,78 @@
     flex-direction: column;
     row-gap: 35px;
 
-
-    li{
+    li {
       display: flex;
       justify-content: space-between;
     }
 
-    &_name{
+    &_name {
       font-size: 18px;
       font-weight: 700;
       line-height: 123.047%;
       letter-spacing: 0.9px;
       text-transform: uppercase;
-
     }
 
-    &_desc{
+    &_desc {
       text-align: left;
       font-size: 17px;
       font-weight: 700;
       line-height: 123.047%;
       letter-spacing: 0.3px;
       text-transform: uppercase;
-
     }
   }
 
-  &__right{
+  &__right {
     width: calc(50% - 25px);
     display: flex;
     flex-direction: column;
     row-gap: 45px;
 
-    input{
+    input {
       font-size: 20px;
       background: #1c1c1c;
       padding: 20px;
       border-radius: 10px;
-      border: 1px solid #393F47;
+      border: 1px solid #393f47;
     }
 
-    textarea{
+    textarea {
       font-size: 20px;
       background: #1c1c1c;
       padding: 20px;
       border-radius: 10px;
-      border: 1px solid #393F47;
+      border: 1px solid #393f47;
       height: 140px;
       resize: none;
     }
 
-    &_box{
+    &_box {
       text-align: right;
     }
 
-    &_btn{
+    &_btn {
       font-size: 18px;
       border-radius: 10px;
-      border: 2px solid #C8A35F;
+      border: 2px solid #c8a35f;
       padding: 20px 60px;
       background: transparent;
       font-weight: 700;
       line-height: 1.6em;
       text-transform: uppercase;
 
-      &:hover{
-        background: #C8A35F;
+      &:hover {
+        background: #c8a35f;
         transform: scale(1.03);
       }
 
-      &:active{
+      &:active {
         transform: scale(0.97);
       }
     }
   }
 }
-
 
 @media (max-width: 1000px) {
   .contact__right_btn {
@@ -108,23 +104,26 @@
   }
 }
 
-@media (max-width: 800px) {
-  .contact__content{
+@media (max-width: 830px) {
+  .contact {
+    padding: 80px 0 170px;
+  }
+  .contact__content {
     row-gap: 30px;
     flex-direction: column;
     margin-top: 50px;
   }
-  .contact__left{
+  .contact__left {
     width: 100%;
   }
 
-  .contact__right{
+  .contact__right {
     width: 100%;
   }
 }
 
 @media (max-width: 600px) {
-  .contact__left{
+  .contact__left {
     row-gap: 20px;
   }
   .contact__right {
@@ -141,7 +140,7 @@
 }
 
 @media (max-width: 600px) {
-  .contact__left{
+  .contact__left {
     display: none;
   }
 }
@@ -152,4 +151,3 @@
     font-size: 17px;
   }
 }
-

@@ -1,5 +1,5 @@
 .footer{
-  padding: 120px 0 55px;
+  padding: 70px 0 200px;
   background-color: #1e1e1e;
   border-top: 1px solid #C8A35F;
   box-shadow: 0 0 10px #C8A35F;
@@ -40,9 +40,10 @@
 
 @media (max-width: 900px) {
   .footer{
-    padding: 20px 0 20px;
+    padding: 20px 0 200px;
   }
 }
+
 
 @media (max-width: 550px) {
   .footer__box_link{
