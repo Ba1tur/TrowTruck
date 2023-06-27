@@ -15,26 +15,26 @@ const About = () => {
                     <div className={a.about__right}>
                         <div
                             className={a.about__right__block}>
-                            <h1>3000+</h1>
-                            <h3>клиентов</h3>
+                            <h1 className={a.about__right__block__title}>3000+</h1>
+                            <h6>клиентов</h6>
                             <p>Доверие, качество.</p>
                         </div>
                         <div
                             className={a.about__right__block}>
-                            <h1>1500</h1>
-                            <h3>Сом</h3>
+                            <h2 className={a.about__right__block__title}>1500</h2>
+                            <h6>Сом</h6>
                             <p>Цена, скидки.</p>
                         </div>
                         <div
                             className={a.about__right__block}>
-                            <h1>24/7</h1>
-                            <h3>Диспетчер</h3>
+                            <h3 className={a.about__right__block__title}>24/7</h3>
+                            <h6>Диспетчер</h6>
                             <p>всегда онлайн</p>
                         </div>
                         <div
                             className={a.about__right__block}>
-                            <h1>12</h1>
-                            <h3>Лет</h3>
+                            <h4 className={a.about__right__block__title}>12</h4>
+                            <h6>Лет</h6>
                             <p>Опыт, качество.</p>
                         </div>
                     </div>

@@ -39,9 +39,9 @@ const Header = () => {
                 <motion.div
                     variants={leftAnimation}
                     className={n.nav__content}>
-                    <div className={n.nav__left}>
-                        <img src="/tuck.png" alt="" />
-                    </div>
+                    <a href='#' className={n.nav__left}>
+                        <img src="/tuck.png" alt="truck.png" />
+                    </a>
 
                     <motion.div className={n.nav__drawer}
                         variants={leftAnimation}>

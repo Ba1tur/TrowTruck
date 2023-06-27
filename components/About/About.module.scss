@@ -39,7 +39,7 @@
       padding-bottom: 5px;
       border: 0.25px solid var(--gold, #c8a35f);
       background: var(--white, #fff);
-      h1 {
+      &__title {
         color: var(--dark, #2f343a);
         text-align: center;
         font-size: 55px;
@@ -49,7 +49,7 @@
         line-height: 80px;
         text-transform: uppercase;
       }
-      h3 {
+      h6 {
         color: #000;
         text-align: center;
         font-size: 18px;
