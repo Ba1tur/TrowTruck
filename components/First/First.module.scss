@@ -18,7 +18,6 @@
     z-index: 2;
 
     a {
-      background: #c8a35f;
       border-radius: 50%;
       width: 60px;
       height: 60px;
@@ -28,9 +27,8 @@
       cursor: pointer;
     }
     a:last-child {
-      background-color: green;
-      width: 90px;
-      height: 95px;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -80,6 +78,8 @@
   flex-direction: row;
   justify-content: space-around;
 }
+
+
 
 @media screen and (max-height: 700px) {
   .first__icons {
